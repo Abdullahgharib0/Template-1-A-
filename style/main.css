@@ -1,0 +1,322 @@
+:root {
+    --transition: .6s;
+    --main-color: #0078ff;
+}
+/* start header */
+header {
+    z-index: 10000;
+    height: 5rem;
+}
+.baner {
+    background: url(../image/home/hero-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.baner .overlay-intro {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+}
+.container p::after {
+    content: " |";
+}
+
+
+/* end header */
+.about .progrees {
+    background-color: #cde1f8;
+    height: .7rem;
+}
+.about .progrees-bar-1 {
+    width: 85%;
+    background-color: var(--main-color);
+    height: .7rem;
+}
+.about .progrees-bar-2 {
+    width: 55%;
+    background-color: var(--main-color);
+    height: .7rem;
+}
+.about .progrees-bar-3 {
+    width: 85%;
+    background-color: var(--main-color);
+    height: .7rem;
+}
+.about .progrees-bar-4 {
+    width: 87%;
+    background-color: var(--main-color);
+    height: .7rem;
+}
+.icons::before{
+    border: 6px solid blue;
+    border-radius: 40px;
+    padding: 15px;
+}
+.experience {
+    background-image: url(../image/counters-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    opacity: .6;
+}
+.experience .container {
+    padding: 8rem 0;
+}
+.icons1{
+    font-size: 40px;
+}
+.icons1::before{
+    border: 10px solid ;
+    border-radius: 70px;
+    padding: 20px;
+}
+.title-mark {
+    width: 5%;
+    height: .2rem;
+    background-color: var(--main-color);
+    margin: 0 auto;
+}
+.portfolio-content {
+    overflow: hidden;
+}
+.feedback {
+    background: url(../image/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    opacity: .6;
+}
+
+/* Start user contact style  */
+
+.user-contact-us {
+    padding: 6rem 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-contact-us .contacting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.user-contact-us .contacting h3 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    margin-bottom: 4rem;
+    position: relative;
+    padding: 16px 20px;
+}
+
+.user-contact-us .contacting h3::after {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: .1rem;
+    top: 100%;
+    left: 15%;
+    background-color: var(--main-color);
+}
+
+.user-contact-us .contacting h3::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: .1rem;
+    bottom: 10%;
+    left: 25%;
+    background-color: var(--main-color);
+}
+
+
+.field {
+    width: 100%;
+    min-height: 3.5rem;
+    padding: .5rem 1rem;
+    background-color: rgba(230, 230, 230, .6);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    transition: .3s;
+    outline: none;
+    border-radius: .2rem;
+    border: .1rem solid rgba(0, 0, 0, 0);
+}
+
+.field:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.field:focus {
+    /* background-color: var(--main-color); */
+    border: .1rem solid var(--main-color);
+}
+
+.user-contact-us .contacting .area {
+    min-height: 15rem;
+}
+.user-contact-us #btn{
+    text-decoration: none;
+    background-color: rgb(28, 26, 26);
+    color: white;
+    border: 4px solid rgb(4, 4, 230);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.user-contact-us #btn:hover {
+    background-color: hsl(348, 100%, 70%);
+}
+
+
+/* End user contact style  */
+
+/* .social-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: .2rem solid var(--main-color);
+    font-size: 1.5rem;
+} */
+
+
+/* start page loading */
+.loading{
+    width: 100%;
+    height: 100vh;
+    background-color: #ffba30;
+    position: fixed;
+    z-index: 99999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spinner {
+    margin: 100px auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    text-align: center;
+    
+    -webkit-animation: sk-rotate 2.0s infinite linear;
+    animation: sk-rotate 2.0s infinite linear;
+  }
+  
+  
+  .dot1, .dot2 {
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background-color: #333;
+    border-radius: 100%;
+    
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+  
+  .dot2 {
+    top: auto;
+    bottom: 0;
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  @-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
+  @keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+  
+  @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bounce {
+    0%, 100% { 
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% { 
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }
+  /* end page loading */
+
+  /* Start user footer style  */
+
+.user-footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 3rem;
+}
+
+.footer-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-icon a {
+    color: #fff;
+}
+
+.footer-icon .icon {
+    font-size: 1.5rem;
+    margin: 4rem;
+}
+
+.footer-icon .icon:hover a {
+    color: var(--main-color);
+}
+
+.copyright {
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: lighter;
+}
+
+span {
+    color: var(--main-color);
+}
+
+
+/* End user contfooteract style  */
+
+/* start button up */
+
+.jo{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    font-size: 40px;
+    background-color: #ff00d9;
+    border: 4px solid rgb(1, 249, 125);
+    border-radius: 20px;
+    display: none;
+}
